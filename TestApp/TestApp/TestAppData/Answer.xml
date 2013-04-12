@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAnswer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Answer>
+    <Id>1</Id>
+    <QuestionId>1</QuestionId>
+    <UserName>c1</UserName>
+    <Text>c1</Text>
+  </Answer>
+  <Answer>
+    <Id>2</Id>
+    <QuestionId>1</QuestionId>
+    <UserName>c2</UserName>
+    <Text>c2</Text>
+  </Answer>
+  <Answer>
+    <Id>3</Id>
+    <QuestionId>2</QuestionId>
+    <UserName>hjk</UserName>
+    <Text>hjkhjk</Text>
+  </Answer>
+</ArrayOfAnswer>

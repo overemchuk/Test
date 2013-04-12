@@ -1,0 +1,44 @@
+﻿<div id="dvGoBackToMainPage" class="go-back" data-bind="click: goBackToHomePage">Back to Home Page</div>
+<div class="container">
+    <div>
+        <span>User Name:</span>
+        <span data-bind="text: Question.UserName"></span>
+    </div>
+    <div>
+        <span>Status:</span>
+        <span data-bind="text: Status"></span>
+    </div>
+    <div>
+        <div>Text:</div>
+        <div data-bind="text: Question.Text"></div>
+    </div>
+    <a href="#" data-bind="click: closeQuestion">Close</a>
+</div>
+<div class="container">
+    <h3>Answers:</h3>
+
+    <ul data-bind="foreach: Answers, visible: Answers().length > 0">
+        <li>
+            <div>
+                <span>User Name:</span>
+                <span data-bind="text: UserName"></span>
+            </div>
+            <div>
+                <div>Text:</div>
+                <div data-bind="text: Text"></div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <span>Answer a question:</span>
+    <div>
+        <input data-bind="value: UserName" placeholder="User Name" />
+    </div>
+    <div>
+        <input data-bind="value: NewAnswerText" placeholder="Text" />
+    </div>
+    <div>
+        <button type="button" data-bind="click: addAnswer">Add</button>
+    </div>
+</div>
