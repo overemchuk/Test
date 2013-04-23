@@ -529,10 +529,10 @@ spa.dataView.prototype = {
 };
 
 
-spa.ordering = function (field, ascending) {
+spa.ordering = function(field, ascending) {
     this.field = ko.observable(field);
     this.ascending = ascending || true;
-}
+};
 
 spa.ordering.prototype = {
     ToOrderString: function () {
